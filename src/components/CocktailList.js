@@ -17,7 +17,7 @@ const CocktailList = () => {
   }
 
   return (
-    <div>
+    <div className="container">
       <h2 className="text-center mb-3">cocktails</h2>
       <div className="row">
         {cocktails.map((cocktail) => {

@@ -15,7 +15,7 @@ const SingleCocktail = () => {
       try {
         const response = await fetch(`${url}${id}`);
         const data = await response.json();
-        console.log(data.drinks[0]);
+
         if (data.drinks) {
           const {
             strDrink: name,
@@ -90,8 +90,8 @@ const SingleCocktail = () => {
 
   return (
     <div className="container">
-      <div className="row my-5">
-        <div className="col-md-10 offset-1">
+      <div className="row my-4">
+        <div className="col col-md-10 offset-md-1">
           <h1 className="mb-4">{name}</h1>
           <div className="row">
             <div className="col-md-6">

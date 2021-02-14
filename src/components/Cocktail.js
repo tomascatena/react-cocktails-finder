@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Cocktail = ({ id, name, image, info, glass, category, instructions }) => {
   return (
     <React.Fragment>
-      <div className="col-lg-4 col-md-6 mb-4">
-        <div className="card rounded-0 shadow-sm">
+      <div className="col-md-4">
+        <div className="card rounded-0 shadow-sm mb-4">
           <img src={image} className="card-img-top rounded-0" alt={name} />
           <div className="card-body">
             <h5 className="card-title">{name}</h5>

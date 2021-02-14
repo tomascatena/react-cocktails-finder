@@ -18,23 +18,25 @@ const SearchForm = () => {
   };
 
   return (
-    <div className="row mb-3">
-      <div className="col-md-8 offset-2">
-        <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label htmlFor="name" className="form-label">
-              Search Your Favourite Cocktail
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="name"
-              ref={searchValue}
-              onChange={searchCocktail}
-              autoComplete="off"
-            />
-          </div>
-        </form>
+    <div className="container">
+      <div className="row mb-3">
+        <div className="col col-sm-12 col-md-8 offset-md-2">
+          <form onSubmit={handleSubmit}>
+            <div className="mb-3">
+              <label htmlFor="name" className="form-label">
+                Search Your Favourite Cocktail
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="name"
+                ref={searchValue}
+                onChange={searchCocktail}
+                autoComplete="off"
+              />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
