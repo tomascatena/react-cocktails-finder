@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="container">
       <div className="row mt-4">
-        <div className="col-md-6 offset-3">
+        <div className="col col-sm-12 col-md-6 offset-md-3">
           <h2 className="text-center mb-4">about this app</h2>
           <p>Web application made in React.</p>
           <p>
